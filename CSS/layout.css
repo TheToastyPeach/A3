@@ -12,7 +12,7 @@ body {
   grid-template-rows: 0 750px;
 }
 
-.gridcontent5 {
+.maingrid {
   width: 350px;
   height: 750px;
   text-align: center;
@@ -21,8 +21,8 @@ body {
   grid-template-rows: repeat(5, 150px);
 }
 
-.gridcontent3 {
-  display:  grid;
+.sidegrid {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 750px;
 } 

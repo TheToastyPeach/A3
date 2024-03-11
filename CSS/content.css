@@ -8,13 +8,13 @@
     }
 }
 
-.letter {
+.maingrid__letter {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
 }
 
-.wraptext {
+.sidegrid__wraptext {
     font-size: calc(var(--fontsize) * 0.5);
     display: inline-block;
     /* flex-wrap: wrap; */
