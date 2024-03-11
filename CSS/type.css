@@ -1,9 +1,12 @@
+:root {
+  --fontsize: 10rem;
+}
 
-  body {
-    font-family: 'Baskervville', serif;
-  }
+body {
+  font-family: 'Baskervville', serif;
+}
 
-  h1 {
-    font-size: 15em;
-    margin: 0;
-  }
+h1 {
+  font-size: var(--fontsize);
+  margin: 0;
+}
