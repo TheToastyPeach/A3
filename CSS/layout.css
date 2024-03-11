@@ -8,11 +8,11 @@ body {
   margin: 5%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 6fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 0 750px;
 }
 
-.gridcontent {
+.gridcontent5 {
   width: 350px;
   height: 750px;
   text-align: center;
@@ -20,3 +20,9 @@ body {
   grid-template-columns: repeat(5, 75px);
   grid-template-rows: repeat(5, 150px);
 }
+
+.gridcontent3 {
+  display:  grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 750px;
+} 

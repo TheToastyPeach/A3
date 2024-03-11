@@ -22,7 +22,7 @@
     text-transform: uppercase;
     height: fit-content;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.05;
 }
 
 .letter:nth-child(1) {
