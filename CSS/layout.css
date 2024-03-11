@@ -8,18 +8,14 @@ body {
   margin: 5%;
   overflow: hidden;
   display: grid;
-  grid-column: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 0 750px;
-
 }
 
-.content {
+.gridcontent {
   width: 350px;
   height: 750px;
   text-align: center;
-}
-
-.content-grid {
   display: grid;
   grid-template-columns: repeat(5, 75px);
   grid-template-rows: repeat(5, 150px);
