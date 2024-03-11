@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* color add */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px,1fr));
+  height: 100vh;
+}
+
+
+
+
+
