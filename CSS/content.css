@@ -15,12 +15,14 @@
 }
 
 .wraptext {
-    font-size: calc(var(--fontsize) * 0.2);
-    display: flex;
-    flex-wrap: wrap;
-    width: 150px;
+    font-size: calc(var(--fontsize) * 0.5);
+    display: inline-block;
+    /* flex-wrap: wrap; */
     z-index: 2;
     text-transform: uppercase;
+    height: fit-content;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .letter:nth-child(1) {
