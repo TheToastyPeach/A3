@@ -1,13 +1,3 @@
-@keyframes spin {
-    from {
-        transform: perspective(600px) rotateZ(-15deg);
-    }
-
-    to {
-        transform: perspective(600px) rotateZ(15deg);
-    }
-}
-
 .maingrid__letter {
     margin: 0;
     padding: 0;
@@ -29,15 +19,10 @@
 .sidegrid__wraptext:nth-child(n-2) {
     color: var(--french);
 }
-.sidegrid__wraptext:nth-child(2) {
-    transform: translateZ(-250px);
-}
-
 /* Targeting the 3rd element without an h2 after it.
 Its gross but with no ids, a way of targeting a single element */
 .sidegrid__wraptext:nth-child(3):not(:has( + .sidegrid__wraptext--lowercase)) {
     color: var(--silver);
-    transform: translate3D(10px, 0, -550px);
 }
 /*------------------------------------------------------------------------*/
 
@@ -45,10 +30,6 @@ Its gross but with no ids, a way of targeting a single element */
 /*Text before poster*******************************************************/
 .sidegrid__wraptext--lowercase:nth-child(1) {
     color: var(--silver);
-    transform: translateZ(-550px);
-}
-.sidegrid__wraptext--lowercase:nth-child(2) {
-    transform: translate3D(10px, 0, -250px);
 }
 
 .sidegrid__wraptext--lowercase:nth-child(n+2) {
@@ -61,8 +42,9 @@ Its gross but with no ids, a way of targeting a single element */
 /*------------------------------------------------------------------------*/
 
 
-/*Specific selectors*******************************/
-/* Formatting for all but first child */
+/*Specific selectors*******************************************************/
+
+/* First child formatting */
 .maingrid__letter:nth-child(1) {
     grid-area: 1 / 1 / span 5 / span 5;
     font-size: 50rem;
@@ -75,7 +57,7 @@ Its gross but with no ids, a way of targeting a single element */
     
 }
 
-/* s and k behind the b */
+/* Formatting for all but first child */
 .maingrid__letter:not(:first-child) {
     align-self: center;
     font-size: calc(var(--fontsize) * 0.5);
