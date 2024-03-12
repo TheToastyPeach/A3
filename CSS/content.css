@@ -25,7 +25,7 @@
     line-height: 1.05;
 }
 
-
+/*Text after poster*******************************************************/
 .sidegrid__wraptext:nth-child(n-2) {
     color: var(--french);
 }
@@ -33,13 +33,16 @@
     transform: translateZ(-250px);
 }
 
-
-/* targeting the 3rd element without an h2 after it */
+/* Targeting the 3rd element without an h2 after it.
+Its gross but with no ids, a way of targeting a single element */
 .sidegrid__wraptext:nth-child(3):not(:has( + .sidegrid__wraptext--lowercase)) {
     color: var(--silver);
     transform: translate3D(10px, 0, -550px);
 }
+/*------------------------------------------------------------------------*/
 
+
+/*Text before poster*******************************************************/
 .sidegrid__wraptext--lowercase:nth-child(1) {
     color: var(--silver);
     transform: translateZ(-550px);
@@ -52,10 +55,11 @@
     color: var(--french);
 }
 
-
 .sidegrid__wraptext--lowercase {
     text-transform: lowercase;
 }
+/*------------------------------------------------------------------------*/
+
 
 /*Specific selectors*******************************/
 /* Formatting for all but first child */
