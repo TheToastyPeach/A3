@@ -5,13 +5,13 @@ body {
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 2%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 500px 250px;
   grid-template-rows: 0 750px;
   justify-content: center;
-  
+  grid-gap: 25px;
 }
 
 .maingrid {
@@ -23,6 +23,7 @@ body {
   grid-template-rows: repeat(5, 150px);
   perspective: 1000px;
   overflow: hidden;
+  
 }
 
 .sidegrid {
