@@ -1,15 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--pink);
+  background-color: var(--white);
 }
 
 .container {
-  margin: 5%;
+  margin-top: 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 500px 250px;
   grid-template-rows: 0 750px;
+  justify-content: center;
+  
 }
 
 .maingrid {
@@ -17,12 +19,15 @@ body {
   height: 750px;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(5, 75px);
+  grid-template-columns: repeat(5, 100px);
   grid-template-rows: repeat(5, 150px);
+  perspective: 1000px;
+  overflow: hidden;
 }
 
 .sidegrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 750px;
+  overflow: hidden;
 } 

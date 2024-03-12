@@ -28,9 +28,13 @@
 .maingrid__letter:nth-child(1) {
     grid-area: 1 / 1 / span 5 / span 5;
     font-size: 50rem;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    justify-content: start;
+    align-items: start;
+    z-index: 0;
+    line-height: 0.9;
+    transform: rotate(-15deg) translateX(-100px) translateZ(-10px);
+    color: var(--lightblue);
+    
 }
 
 .maingrid__letter:not(:first-child) {
@@ -39,30 +43,30 @@
 
 .maingrid__letter:nth-child(2) {
     grid-area: 2 / 2 / 2 / span 2;
-    transform: perspective(600px) rotateY(10deg);
+    transform: rotateY(10deg);
 }
 
 .maingrid__letter:nth-child(3) {
     grid-area: 2 / 3 / 2 / 3;
-    transform: perspective(600px) rotateY(20deg);
+    transform: rotateY(20deg);
     font-size: calc(var(--fontsize) * 0.95);
 }
 
 .maingrid__letter:nth-child(4) {
     grid-area: 2 / 3 / 2 / span 2;
-    transform: perspective(600px) rotateY(30deg);
+    transform: rotateY(30deg);
     font-size: calc(var(--fontsize) * 0.9);
 }
 
 .maingrid__letter:nth-child(5) {
     grid-area: 2 / 4 / 2 / 4;
-    transform: perspective(600px) rotateY(40deg);
+    transform: rotateY(40deg);
     font-size: calc(var(--fontsize) * 0.85);
 }
 
 .maingrid__letter:nth-child(6) {
     grid-area: 2 / 4 / 2 / span 2;
-    transform: perspective(600px) rotateY(50deg);
+    transform: rotateY(50deg);
     font-size: calc(var(--fontsize) * 0.8);
 }
 
