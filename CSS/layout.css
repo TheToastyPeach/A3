@@ -8,10 +8,9 @@ body {
   margin-top: 2%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 500px 250px;
+  grid-template-columns: 250px 500px 250px;
   grid-template-rows: 0 750px;
   justify-content: center;
-  grid-gap: 25px;
 }
 
 .maingrid {
@@ -31,4 +30,5 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   height: 750px;
   overflow: hidden;
+  perspective: 1000px;
 } 
