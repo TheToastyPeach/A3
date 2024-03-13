@@ -80,23 +80,38 @@ body{
 .maingrid__h2 {
     font-size: calc(var(--fontsize) * 0.11);
     font-style: italic;
+    color: var(--black);
+}
+
+.maingrid__h2:nth-child(12) {
     align-self: start;
     grid-area: 5 / 4 / 5 / span 2;
     color: var(--lightblue);
     transform: translateX(20px);
 }
 
-.maingrid__h2:has(+ .maingrid__p){
-    color: var(--black);
+.maingrid__h2:nth-child(13){
+    grid-area: 5 / 4 / 5 / span 2;
     transform: translateX(15px);
 }
 
-/* AND operator, making sure if it does NOT have BOTH apply rules */
-.maingrid__h2:not(:has(+ .maingrid__p)):not(:has(+ .maingrid__h2)){
+/* AND operator, making sure if it does NOT have BOTH - apply rules. Works, but not worth using */
+/* .maingrid__h2:not(:has(+ .maingrid__p)):not(:has(+ .maingrid__h2)){ */
+
+.maingrid__h2:nth-child(15) {
+    grid-area: 2 / 4 / 2 / span 2;
+    text-align: right;
+    transform: translate(5px, 9px);
+    margin-right: 10px;
+    color: var(--lightblue);
+
+}
+
+.maingrid__h2:nth-child(16){
     grid-area: 2 / 4 / 2 / span 2;
     text-align: right;
     /* ignoring parent translate */
-    transform: translateX(0px);
+    transform: translateY(9px);
     margin-right: 10px;
 }
 
