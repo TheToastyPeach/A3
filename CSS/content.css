@@ -78,23 +78,36 @@ body{
 /*Other element positioning
 ***************************************************/
 .maingrid__h2 {
-    text-align: left;
-    grid-area: 1 / 4 / 1 / span 2;
+    font-size: calc(var(--fontsize) * 0.11);
+    font-style: italic;
+    align-self: start;
+    grid-area: 5 / 4 / 5 / span 2;
     color: var(--lightblue);
+    transform: translateX(20px);
 }
 
 .maingrid__h2:has(+ .maingrid__p){
     color: var(--black);
-    transform: translateY(1px);
+    transform: translateX(15px);
+}
+
+/* AND operator, making sure if it does NOT have BOTH apply rules */
+.maingrid__h2:not(:has(+ .maingrid__p)):not(:has(+ .maingrid__h2)){
+    grid-area: 2 / 4 / 2 / span 2;
+    text-align: right;
+    /* ignoring parent translate */
+    transform: translateX(0px);
+    margin-right: 10px;
 }
 
 .maingrid__p {
-    grid-area: 1 / 4 / span 2 / span 2;
+    grid-area: 2 / 3 / span 2 / span 3;
     align-self: center;
-    font-size: calc(var(--fontsize) * 0.064);
+    font-size: calc(var(--fontsize) * 0.07);
     transform: translateY(-30px);
     margin-right: 10px;
-    text-align: left;
+    text-align: right;
+
 }
 
 /*------------------------------------------------*/
