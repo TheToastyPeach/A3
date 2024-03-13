@@ -16,6 +16,10 @@ body{
     overflow: hidden;
 }
 
+.maingrid {
+    background-color: var(--pink);
+}
+
 .maingrid__letter {
     margin: 0;
     padding: 0;
@@ -41,7 +45,8 @@ body{
 
 
 
-/*Specific selectors*******************************************************/
+/*Specific selectors
+*******************************************************/
 
 /* First child formatting */
 .maingrid__letter:nth-child(1) {
@@ -70,7 +75,34 @@ body{
 /*------------------------------------------------*/
 
 
-/*Letter positioning*******************************/
+/*Other element positioning
+***************************************************/
+.maingrid__h2 {
+    text-align: left;
+    grid-area: 1 / 4 / 1 / span 2;
+    color: var(--lightblue);
+}
+
+.maingrid__h2:has(+ .maingrid__p){
+    color: var(--black);
+    transform: translateY(1px);
+}
+
+.maingrid__p {
+    grid-area: 1 / 4 / span 2 / span 2;
+    align-self: center;
+    font-size: calc(var(--fontsize) * 0.064);
+    transform: translateY(-30px);
+    margin-right: 10px;
+    text-align: left;
+}
+
+/*------------------------------------------------*/
+
+
+
+/*h1 Letter positioning
+***************************************************/
 .maingrid__letter:nth-child(2) {
     grid-area: 4 / 1 / span 2 / span 2;
 }
