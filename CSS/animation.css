@@ -1,7 +1,7 @@
 @keyframes scroll {
     0% {
         transform: translate3D(0, 0, 0);
-        /* color: var(--french); */
+        /* color: var(--french);  -- causing some weird animation*/
     }
 
     100% {
@@ -12,6 +12,9 @@
 
 
   /* After poster text**********************************************/
+
+  /* Targeting the element without an h2 after it.
+Its gross! But with no ids, its a way of targeting a single element */
   .sidegrid__wraptext:nth-child(1):not(:has( + .sidegrid__wraptext--lowercase)) {
     animation: scroll 10s ease-in-out infinite alternate;
     animation-delay: 6s;
