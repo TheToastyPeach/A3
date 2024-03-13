@@ -2,7 +2,7 @@
   --fontsize: 10rem;
 }
 
-body {
+body, button {
   font-family: 'Baskervville', serif;
 }
 

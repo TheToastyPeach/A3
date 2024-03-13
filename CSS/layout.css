@@ -13,11 +13,10 @@ h3,p {
   padding: 0;
 }
 
-
-
 .container {
   overflow: hidden;
   display: grid;
+  
   grid-template-columns: 250px 500px 250px;
   grid-template-rows: 0 750px;
   justify-content: center;
