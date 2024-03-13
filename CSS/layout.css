@@ -8,6 +8,13 @@ body {
   align-items: center;
 }
 
+h3,p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .container {
   overflow: hidden;
   display: grid;
@@ -27,7 +34,7 @@ body {
   grid-template-rows: repeat(5, 150px);
   perspective: 1000px;
   overflow: hidden;
-  border: 2px solid var(--silver);
+  border: 5px solid var(--blue);
   border-radius: 10px;
   /* box-shadow: 0 0 10px var(--black); -- LAB colours do not support transparency :(  */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);

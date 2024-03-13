@@ -1,3 +1,4 @@
+/* Side letter animation */
 @keyframes scroll {
     0% {
         transform: translate3D(0, 0, 0);
@@ -10,6 +11,19 @@
     }
   }
 
+/* background animaiton */
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 -100px;
+    }
+    100% {
+        background-position: 45% 105%;
+    }
+}
+
+body {
+    animation: scrollBackground 12s linear infinite;
+}
 
   /* After poster text**********************************************/
 
